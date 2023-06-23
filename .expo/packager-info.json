@@ -1,7 +1,9 @@
 {
-  "expoServerPort": 19000,
-  "packagerPort": 19000,
-  "expoServerNgrokUrl": "https://b4-bxf.thomasries.rn-jobapp.exp.direct",
-  "packagerNgrokUrl": "https://b4-bxf.thomasries.rn-jobapp.exp.direct",
-  "ngrokPid": 65643
+  "expoServerPort": null,
+  "packagerPort": null,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null,
+  "packagerPid": null,
+  "webpackServerPort": null
 }
