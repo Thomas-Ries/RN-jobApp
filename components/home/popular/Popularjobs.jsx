@@ -15,13 +15,17 @@ const Popularjobs = () => {
     num_pages: 1
   });
 
-  // console.log(data);
+  const [selectedJob, setSelectedJob] = useState();
+
+  const handleCardPress = (item) => {
+
+  };
 
   return (
     <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.headerTitle}>
-          Popularjobs
+          Emplois à la Une
         </Text>
         <TouchableOpacity>
           <Text style={styles.headerBtn}>Afficher tout</Text>
@@ -44,8 +48,7 @@ const Popularjobs = () => {
         renderItem={({ item }) => (
           <PopularJobCard
           item={item} />
-        )}>
-        </FlatList>
+        )} />
       )}
     </View>
 
@@ -53,4 +56,4 @@ const Popularjobs = () => {
   )
 }
 
-export default Popularjobs
+export default Popularjobs;

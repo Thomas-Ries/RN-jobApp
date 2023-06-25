@@ -1,14 +1,31 @@
-import React from 'react'
-import { View, Text } from 'react-native'
+import React from 'react';
+import { View, Text, Image } from 'react-native';
 
-import styles from './company.style'
+import styles from './company.style';
+import { icons } from '../../../constants';
+import { checkImageURL } from '../../../utils';
 
-const Company = () => {
+
+
+const Company = ({ companyLogo, jobTitle, companyName, Location  }) => {
   return (
-    <View>
-      <Text>Company</Text>
+    <View style={styles.container}>
+      <View style={styles.logoBox}>
+        <Image
+        style={styles.logoImage}
+        source={{ 
+          uri: checkImageURL(companyLogo)
+          ? companyLogo
+          : 'https://picsum.photos/200/300/?blur'
+        }} />
+      </View>
+
+      <View>
+        <Text style={styles.jobTitle} > {jobTitle} </Text>
+      </View>
+
     </View>
   )
 }
 
-export default Company
+export default Company;

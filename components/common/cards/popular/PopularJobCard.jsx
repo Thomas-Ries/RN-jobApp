@@ -25,7 +25,7 @@ const PopularJobCard = ({ item, selectedJob, handleCardPress }) => {
           { item.employer_name }
       </Text>
 
-      <View syle={styles.infoContainer}>
+      <View style={styles.infoContainer}>
         <Text style={styles.jobName(selectedJob, item)} numberOfLines={1} > { item.job_title } </Text>
         <Text style={styles.location}> { item.job_country } </Text>
       </View>
@@ -34,4 +34,4 @@ const PopularJobCard = ({ item, selectedJob, handleCardPress }) => {
   )
 }
 
-export default PopularJobCard
+export default PopularJobCard;
